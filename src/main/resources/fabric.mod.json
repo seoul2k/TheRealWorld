@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "the_real_world",
+  "version": "${version}",
+  "name": "TheRealWorld",
+  "description": "The real world.",
+  "authors": [
+    "xiongts"
+  ],
+  "contact": {
+    "repo": "https://github.com/seoul2k/TheRealWorld"
+  },
+  "license": "MIT",
+  "icon": "assets/the_real_world/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "client": [
+      "site.xiongtianshuo.the_real_world.client.TheRealWorldClient"
+    ],
+    "main": [
+      "site.xiongtianshuo.the_real_world.TheRealWorld"
+    ]
+  },
+  "mixins": [
+    "the_real_world.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
